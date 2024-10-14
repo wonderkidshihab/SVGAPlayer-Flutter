@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:svgaplayer_flutter/svgaplayer_flutter.dart';
+import 'package:svgaplayer_3/svgaplayer_flutter.dart';
 
 class SVGASampleScreen extends StatefulWidget {
   final String? name;

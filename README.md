@@ -1,16 +1,5 @@
 # SVGAPlayer-Flutter
 
-[简体中文](./README.zh.md)
-
-## 支持本项目
-
-如果 SVGA-Flutter 为您提供了便利与帮助，诚恳建议您通过以下方式支持作者、贡献者持续为该项目发电。
-
-1. 轻点 GitHub Star，让更多人看到该项目。
-2. 通过赞赏码(页面底部可见)的方式鼓励作者继续维护代码。
-
-关注作者另外一个开源项目，[MPFlutter](https://mpflutter.com/)，使用 Flutter 开发微信小程序。
-
 ## Introduce
 
 SVGAPlayer is a light-weight animation renderer. You use [tools](https://svga.io/designer.html) to export `svga` file from `Adobe Animate CC` or `Adobe After Effects`, and then use SVGAPlayer to render animation on mobile application.
@@ -29,7 +18,7 @@ Here introduce `SVGAPlayer-Flutter` usage. Wonder exporting usage? Click [here](
 
 ```
 dependencies:
-  svgaplayer_flutter: ^3.0.0  #latest version
+  svgaplayer_3: ^3.0.1  #latest version
 ```
 
 ### Locate files
@@ -142,8 +131,3 @@ Here are many feature samples.
 [![996.ICU](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) 
 
 [Anti 996](./LICENSE)
-
-
-## 感谢或联系作者
-
-![](https://cdn.jsdelivr.net/gh/PonyCui/ponycui.github.io@master/contact.png)

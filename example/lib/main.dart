@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:svgaplayer_flutter/svgaplayer_flutter.dart';
+import 'package:svgaplayer_3/svgaplayer_flutter.dart';
 import 'package:svgaplayer_flutter_example/sample.dart';
 
 import 'constants.dart';
