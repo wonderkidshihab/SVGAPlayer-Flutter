@@ -54,6 +54,8 @@ class HomeScreen extends StatelessWidget {
     // }, "banner"),
   };
 
+  HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -131,12 +133,13 @@ class _SVGASampleScreenState extends State<SVGASampleScreen>
     if (widget.dynamicCallback != null) {
       widget.dynamicCallback!(videoItem);
     }
-    if (mounted)
+    if (mounted) {
       setState(() {
-        this.isLoading = false;
-        this.animationController?.videoItem = videoItem;
+        isLoading = false;
+        animationController?.videoItem = videoItem;
         _playAnimation();
       });
+    }
   }
 
   void _playAnimation() {
@@ -153,15 +156,15 @@ class _SVGASampleScreenState extends State<SVGASampleScreen>
       body: Stack(
         children: <Widget>[
           Container(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Url: ${widget.image}",
-                  style: Theme.of(context).textTheme.subtitle2)),
+            padding: const EdgeInsets.all(8.0),
+            child: Text("Url: ${widget.image}"),
+          ),
           if (isLoading) LinearProgressIndicator(),
           Center(
             child: ColoredBox(
               color: backgroundColor,
               child: SVGAImage(
-                this.animationController!,
+                animationController!,
                 fit: fit,
                 clearsAfterStop: false,
                 allowDrawingOverflow: allowOverflow,
