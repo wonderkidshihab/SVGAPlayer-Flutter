@@ -1,4 +1,4 @@
-part of svgaplayer_flutter_player;
+part of 'player.dart';
 
 class _SVGAPainter extends CustomPainter {
   final BoxFit fit;
@@ -19,7 +19,10 @@ class _SVGAPainter extends CustomPainter {
         super(repaint: controller);
 
   @override
-  void paint(Canvas canvas, Size size) {
+  void paint(
+    Canvas canvas,
+    Size size,
+  ) {
     if (controller._canvasNeedsClear) {
       // mark cleared
       controller._canvasNeedsClear = false;

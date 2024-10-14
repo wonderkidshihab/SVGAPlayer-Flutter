@@ -1,11 +1,14 @@
-part of svgaplayer_flutter_player;
+part of 'player.dart';
 
 class SVGASimpleImage extends StatefulWidget {
   final String? resUrl;
   final String? assetsName;
 
-  const SVGASimpleImage({Key? key, this.resUrl, this.assetsName})
-      : super(key: key);
+  const SVGASimpleImage({
+    super.key,
+    this.resUrl,
+    this.assetsName,
+  });
 
   @override
   State<StatefulWidget> createState() {
@@ -27,7 +30,8 @@ class _SVGASimpleImageState extends State<SVGASimpleImage>
   @override
   void didUpdateWidget(covariant SVGASimpleImage oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.resUrl != widget.resUrl || oldWidget.assetsName != widget.assetsName) {
+    if (oldWidget.resUrl != widget.resUrl ||
+        oldWidget.assetsName != widget.assetsName) {
       _tryDecodeSvga();
     }
   }

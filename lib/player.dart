@@ -1,15 +1,16 @@
-library svgaplayer_flutter_player;
+library;
 
 import 'dart:math';
+import 'dart:typed_data';
+
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:svgaplayer_flutter/proto/svga.pb.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'proto/svga.pbserver.dart';
-import 'dart:typed_data';
 import 'package:path_drawing/path_drawing.dart';
+
 import 'parser.dart';
+import 'proto/svga.pb.dart';
+import 'proto/svga.pbserver.dart';
+
 part 'painter.dart';
 part 'simple_player.dart';
 
@@ -31,7 +32,7 @@ class SVGAImage extends StatefulWidget {
   final bool? allowDrawingOverflow;
 
   /// If `null`, the viewbox size of [MovieEntity] will be use.
-  /// 
+  ///
   /// Defaults to null.
   final Size? preferredSize;
   const SVGAImage(
@@ -59,8 +60,8 @@ class SVGAAnimationController extends AnimationController {
   bool _canvasNeedsClear = false;
 
   SVGAAnimationController({
-    required TickerProvider vsync,
-  }) : super(vsync: vsync, duration: Duration.zero);
+    required super.vsync,
+  }) : super(duration: Duration.zero);
 
   set videoItem(MovieEntity? value) {
     assert(!_isDisposed, '$this has been disposed!');
@@ -122,8 +123,10 @@ class SVGAAnimationController extends AnimationController {
 
   @override
   TickerFuture forward({double? from}) {
-    assert(_videoItem != null,
-        'SVGAAnimationController.forward() called after dispose()?');
+    assert(
+      _videoItem != null,
+      'SVGAAnimationController.forward() called after dispose()?',
+    );
     return super.forward(from: from);
   }
 
