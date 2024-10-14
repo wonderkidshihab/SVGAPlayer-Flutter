@@ -1,7 +1,9 @@
 library;
 
+import 'dart:collection';
 import 'dart:math';
 import 'dart:typed_data';
+import 'dart:ui' as ui;
 
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
@@ -37,13 +39,13 @@ class SVGAImage extends StatefulWidget {
   final Size? preferredSize;
   const SVGAImage(
     this._controller, {
-    Key? key,
+    super.key,
     this.fit = BoxFit.contain,
     this.filterQuality = FilterQuality.low,
     this.allowDrawingOverflow,
     this.clearsAfterStop = true,
     this.preferredSize,
-  }) : super(key: key);
+  });
 
   @override
   State<StatefulWidget> createState() => _SVGAImageState();
