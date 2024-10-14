@@ -1,3 +1,7 @@
+#### 3.0.0 (2024-10-14)
+
+* Update to Dart 3
+
 #### 2.2.0 (2022-11-24)
 
 * Update path-drawing version.
