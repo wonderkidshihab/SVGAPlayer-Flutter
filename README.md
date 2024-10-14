@@ -1,8 +1,3 @@
-# Archived
-本仓库已经停止维护，你仍然继续阅读源码及创建分叉，但本仓库不会继续更新，也不会回答任何 issue。
-
-This repo has stopped maintenance, you can still continue to read the source code and create forks, but this repo will not continue to be updated, nor will it answer any issues.
-
 # SVGAPlayer-Flutter
 
 [简体中文](./README.zh.md)
@@ -34,7 +29,7 @@ Here introduce `SVGAPlayer-Flutter` usage. Wonder exporting usage? Click [here](
 
 ```
 dependencies:
-  svgaplayer_flutter: ^2.0.0  #latest version
+  svgaplayer_flutter: ^3.0.0  #latest version
 ```
 
 ### Locate files
