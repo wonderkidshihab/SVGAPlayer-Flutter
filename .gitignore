@@ -8,3 +8,15 @@ build/
 
 .idea/
 .vscode/
+# Antigravity Safe Git Sync Ignore Rules
+*.env
+*.env.*
+*.pem
+*.sql
+*.db
+*.zip
+android/app/.cxx/
+.firebase/
+__pycache__/
+vendor/
+node_modules/
